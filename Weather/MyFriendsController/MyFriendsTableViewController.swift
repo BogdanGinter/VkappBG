@@ -14,6 +14,7 @@ class MyFriendsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let homer = User(name: "Homer Simpson",
                          age: 39,
                          avatarImageName: "homer_simpson_avatar",
