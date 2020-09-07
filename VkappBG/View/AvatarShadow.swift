@@ -9,6 +9,12 @@
 import UIKit
 
 @IBDesignable class AvatarShadow: UIView {
+    
+    let animation = Animations()
+    
+    @objc func onTap() {
+        animation.reactToClickOnAvatar(self)
+    }
 
    @IBInspectable var color: UIColor = .black {
        didSet {
@@ -33,6 +39,24 @@ import UIKit
            self.updateOffset()
        }
    }
+    
+    lazy var tapGestureRecognizer: UITapGestureRecognizer = {
+           let recognizer = UITapGestureRecognizer(target: self, action: #selector(onTap))
+           recognizer.numberOfTapsRequired = 1
+           recognizer.numberOfTouchesRequired = 1
+           return recognizer
+       }()
+    
+    override init (frame: CGRect)
+    {
+        super.init(frame: frame)
+        addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        addGestureRecognizer(tapGestureRecognizer)
+    }
 
    override class var layerClass: AnyClass {
        return CAShapeLayer.self

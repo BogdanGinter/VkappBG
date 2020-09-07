@@ -25,6 +25,18 @@ class LoginFormController: UIViewController {
     
     @IBAction func signIn(_ sender: Any) {
     }
+    @IBOutlet weak var dotsStack: UIStackView!
+    @IBOutlet weak var dot1: UIImageView!
+    @IBOutlet weak var dot2: UIImageView!
+    @IBOutlet weak var dot3: UIImageView!
+    
+    let animation = Animations()
+    
+    func animateDots () {
+        animation.fadeElement(dot1, duration: 0.75, delay: 0.75)
+        animation.fadeElement(dot2, duration: 0.75, delay: 1)
+        animation.fadeElement(dot3, duration: 0.75, delay: 1.25)
+    }
     
     @objc func keyboardWasShown(_ notification: Notification) {
         guard let keyBoardFrame = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect
@@ -39,6 +51,7 @@ class LoginFormController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        animateDots()
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWasShown), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillBeHidden(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
@@ -74,7 +87,7 @@ class LoginFormController: UIViewController {
     }
     
     func showLoginError() {
-        let alter = UIAlertController(title: "Ошибка", message: "Введены неверные данные пользователя", preferredStyle: .alert)
+        let alter = UIAlertController(title: "Ошибка", message: "Введены не верные данные пользователя", preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alter.addAction(action)
         present(alter, animated: true, completion: nil)
