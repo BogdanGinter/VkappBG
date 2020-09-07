@@ -7,53 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D817405325024EB000720075 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817405225024EB000720075 /* AvatarView.swift */; };
-		D817405525024EDF00720075 /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817405425024EDF00720075 /* BackView.swift */; };
-		D817405725024F0A00720075 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817405625024F0A00720075 /* CustomButton.swift */; };
-		D817405925024F4600720075 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817405825024F4600720075 /* Gradient.swift */; };
-		D817405B25024F7700720075 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817405A25024F7700720075 /* Alert.swift */; };
+		D817405325024EB000720075 /* AvatarShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817405225024EB000720075 /* AvatarShadow.swift */; };
+		D817405725024F0A00720075 /* HeartButtonControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817405625024F0A00720075 /* HeartButtonControl.swift */; };
+		D817405925024F4600720075 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817405825024F4600720075 /* GradientView.swift */; };
+		D817405B25024F7700720075 /* UserHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817405A25024F7700720075 /* UserHeader.swift */; };
+		D862513C2506450800CE9EBD /* UserHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D862513B2506450800CE9EBD /* UserHeader.xib */; };
+		D862513F2506457E00CE9EBD /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862513E2506457E00CE9EBD /* NewsTableViewController.swift */; };
+		D86251412506459A00CE9EBD /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86251402506459A00CE9EBD /* NewsTableViewCell.swift */; };
+		D86251432506465E00CE9EBD /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86251422506465E00CE9EBD /* NewsData.swift */; };
 		D89D477024F12E5100E37FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D476F24F12E5100E37FEA /* AppDelegate.swift */; };
 		D89D477224F12E5100E37FEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D477124F12E5100E37FEA /* SceneDelegate.swift */; };
-		D89D477424F12E5100E37FEA /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D477324F12E5100E37FEA /* LoginFormViewController.swift */; };
+		D89D477424F12E5100E37FEA /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D477324F12E5100E37FEA /* LoginFormController.swift */; };
 		D89D477724F12E5100E37FEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89D477524F12E5100E37FEA /* Main.storyboard */; };
 		D89D477924F12E5300E37FEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89D477824F12E5300E37FEA /* Assets.xcassets */; };
 		D89D477C24F12E5300E37FEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89D477A24F12E5300E37FEA /* LaunchScreen.storyboard */; };
-		D8DE6D1424F8358F0094F233 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D1324F8358F0094F233 /* User.swift */; };
+		D8DE6D1424F8358F0094F233 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D1324F8358F0094F233 /* UserData.swift */; };
 		D8DE6D1624F835990094F233 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D1524F835990094F233 /* Groups.swift */; };
-		D8DE6D1824F8360A0094F233 /* AllGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D1724F8360A0094F233 /* AllGroupsTableViewController.swift */; };
-		D8DE6D1A24F836460094F233 /* AllGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D1924F836460094F233 /* AllGroupsTableViewCell.swift */; };
+		D8DE6D1824F8360A0094F233 /* SearchingGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D1724F8360A0094F233 /* SearchingGroupsTableViewController.swift */; };
+		D8DE6D1A24F836460094F233 /* SearchingGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D1924F836460094F233 /* SearchingGroupsTableViewCell.swift */; };
 		D8DE6D1C24F836C70094F233 /* MyGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D1B24F836C70094F233 /* MyGroupsTableViewController.swift */; };
 		D8DE6D1E24F837020094F233 /* MyGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D1D24F837020094F233 /* MyGroupsTableViewCell.swift */; };
-		D8DE6D2224F8379C0094F233 /* FriendPhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D2124F8379C0094F233 /* FriendPhotosCollectionViewCell.swift */; };
-		D8DE6D2424F837DF0094F233 /* FriendPhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D2324F837DF0094F233 /* FriendPhotosCollectionViewController.swift */; };
-		D8DE6D2624F838270094F233 /* MyFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D2524F838270094F233 /* MyFriendsTableViewController.swift */; };
-		D8DE6D2824F8385A0094F233 /* MyFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D2724F8385A0094F233 /* MyFriendsTableViewCell.swift */; };
+		D8DE6D2224F8379C0094F233 /* FriendsPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D2124F8379C0094F233 /* FriendsPhotoCollectionViewCell.swift */; };
+		D8DE6D2424F837DF0094F233 /* FriendsPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D2324F837DF0094F233 /* FriendsPhotoCollectionViewController.swift */; };
+		D8DE6D2624F838270094F233 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D2524F838270094F233 /* FriendsTableViewController.swift */; };
+		D8DE6D2824F8385A0094F233 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D2724F8385A0094F233 /* FriendsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D817405225024EB000720075 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
-		D817405425024EDF00720075 /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
-		D817405625024F0A00720075 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		D817405825024F4600720075 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
-		D817405A25024F7700720075 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		D89D476C24F12E5100E37FEA /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D817405225024EB000720075 /* AvatarShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarShadow.swift; sourceTree = "<group>"; };
+		D817405625024F0A00720075 /* HeartButtonControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartButtonControl.swift; sourceTree = "<group>"; };
+		D817405825024F4600720075 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		D817405A25024F7700720075 /* UserHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeader.swift; sourceTree = "<group>"; };
+		D862513B2506450800CE9EBD /* UserHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeader.xib; sourceTree = "<group>"; };
+		D862513E2506457E00CE9EBD /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		D86251402506459A00CE9EBD /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		D86251422506465E00CE9EBD /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		D89D476C24F12E5100E37FEA /* VkappBG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkappBG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89D476F24F12E5100E37FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D89D477124F12E5100E37FEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D89D477324F12E5100E37FEA /* LoginFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
+		D89D477324F12E5100E37FEA /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
 		D89D477624F12E5100E37FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D89D477824F12E5300E37FEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D89D477B24F12E5300E37FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D89D477D24F12E5300E37FEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8DE6D1324F8358F0094F233 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D8DE6D1324F8358F0094F233 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		D8DE6D1524F835990094F233 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
-		D8DE6D1724F8360A0094F233 /* AllGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableViewController.swift; sourceTree = "<group>"; };
-		D8DE6D1924F836460094F233 /* AllGroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableViewCell.swift; sourceTree = "<group>"; };
+		D8DE6D1724F8360A0094F233 /* SearchingGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingGroupsTableViewController.swift; sourceTree = "<group>"; };
+		D8DE6D1924F836460094F233 /* SearchingGroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingGroupsTableViewCell.swift; sourceTree = "<group>"; };
 		D8DE6D1B24F836C70094F233 /* MyGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableViewController.swift; sourceTree = "<group>"; };
 		D8DE6D1D24F837020094F233 /* MyGroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableViewCell.swift; sourceTree = "<group>"; };
-		D8DE6D2124F8379C0094F233 /* FriendPhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotosCollectionViewCell.swift; sourceTree = "<group>"; };
-		D8DE6D2324F837DF0094F233 /* FriendPhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotosCollectionViewController.swift; sourceTree = "<group>"; };
-		D8DE6D2524F838270094F233 /* MyFriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsTableViewController.swift; sourceTree = "<group>"; };
-		D8DE6D2724F8385A0094F233 /* MyFriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		D8DE6D2124F8379C0094F233 /* FriendsPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8DE6D2324F837DF0094F233 /* FriendsPhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		D8DE6D2524F838270094F233 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		D8DE6D2724F8385A0094F233 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,18 +76,35 @@
 		D817405125024E9500720075 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D817405225024EB000720075 /* AvatarView.swift */,
-				D817405425024EDF00720075 /* BackView.swift */,
-				D817405625024F0A00720075 /* CustomButton.swift */,
-				D817405825024F4600720075 /* Gradient.swift */,
+				D817405225024EB000720075 /* AvatarShadow.swift */,
+				D817405625024F0A00720075 /* HeartButtonControl.swift */,
+				D817405825024F4600720075 /* GradientView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D862513A250644C100CE9EBD /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				D817405A25024F7700720075 /* UserHeader.swift */,
+				D862513B2506450800CE9EBD /* UserHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		D862513D2506454400CE9EBD /* News */ = {
+			isa = PBXGroup;
+			children = (
+				D862513E2506457E00CE9EBD /* NewsTableViewController.swift */,
+				D86251402506459A00CE9EBD /* NewsTableViewCell.swift */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 		D89D476324F12E5100E37FEA = {
 			isa = PBXGroup;
 			children = (
-				D89D476E24F12E5100E37FEA /* Weather */,
+				D89D476E24F12E5100E37FEA /* VkappBG */,
 				D89D476D24F12E5100E37FEA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,14 +112,17 @@
 		D89D476D24F12E5100E37FEA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D89D476C24F12E5100E37FEA /* Weather.app */,
+				D89D476C24F12E5100E37FEA /* VkappBG.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D89D476E24F12E5100E37FEA /* Weather */ = {
+		D89D476E24F12E5100E37FEA /* VkappBG */ = {
 			isa = PBXGroup;
 			children = (
+				D862513D2506454400CE9EBD /* News */,
+				D862513A250644C100CE9EBD /* Header */,
+				D817405125024E9500720075 /* View */,
 				D8DE6D1224F8354F0094F233 /* MyFriendsController */,
 				D8DE6D1124F835290094F233 /* MyGroupsController */,
 				D8DE6D1024F835130094F233 /* FriendPhotosController */,
@@ -104,21 +130,21 @@
 				D8DE6D0E24F8348D0094F233 /* Models */,
 				D89D476F24F12E5100E37FEA /* AppDelegate.swift */,
 				D89D477124F12E5100E37FEA /* SceneDelegate.swift */,
-				D89D477324F12E5100E37FEA /* LoginFormViewController.swift */,
+				D89D477324F12E5100E37FEA /* LoginFormController.swift */,
 				D89D477524F12E5100E37FEA /* Main.storyboard */,
 				D89D477824F12E5300E37FEA /* Assets.xcassets */,
 				D89D477A24F12E5300E37FEA /* LaunchScreen.storyboard */,
 				D89D477D24F12E5300E37FEA /* Info.plist */,
 			);
-			path = Weather;
+			path = VkappBG;
 			sourceTree = "<group>";
 		};
 		D8DE6D0E24F8348D0094F233 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D8DE6D1324F8358F0094F233 /* User.swift */,
+				D86251422506465E00CE9EBD /* NewsData.swift */,
+				D8DE6D1324F8358F0094F233 /* UserData.swift */,
 				D8DE6D1524F835990094F233 /* Groups.swift */,
-				D817405A25024F7700720075 /* Alert.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,8 +152,8 @@
 		D8DE6D0F24F834F40094F233 /* AllGroupsController */ = {
 			isa = PBXGroup;
 			children = (
-				D8DE6D1724F8360A0094F233 /* AllGroupsTableViewController.swift */,
-				D8DE6D1924F836460094F233 /* AllGroupsTableViewCell.swift */,
+				D8DE6D1724F8360A0094F233 /* SearchingGroupsTableViewController.swift */,
+				D8DE6D1924F836460094F233 /* SearchingGroupsTableViewCell.swift */,
 			);
 			path = AllGroupsController;
 			sourceTree = "<group>";
@@ -135,8 +161,8 @@
 		D8DE6D1024F835130094F233 /* FriendPhotosController */ = {
 			isa = PBXGroup;
 			children = (
-				D8DE6D2124F8379C0094F233 /* FriendPhotosCollectionViewCell.swift */,
-				D8DE6D2324F837DF0094F233 /* FriendPhotosCollectionViewController.swift */,
+				D8DE6D2124F8379C0094F233 /* FriendsPhotoCollectionViewCell.swift */,
+				D8DE6D2324F837DF0094F233 /* FriendsPhotoCollectionViewController.swift */,
 			);
 			path = FriendPhotosController;
 			sourceTree = "<group>";
@@ -144,9 +170,8 @@
 		D8DE6D1124F835290094F233 /* MyGroupsController */ = {
 			isa = PBXGroup;
 			children = (
-				D8DE6D1B24F836C70094F233 /* MyGroupsTableViewController.swift */,
-				D817405125024E9500720075 /* View */,
 				D8DE6D1D24F837020094F233 /* MyGroupsTableViewCell.swift */,
+				D8DE6D1B24F836C70094F233 /* MyGroupsTableViewController.swift */,
 			);
 			path = MyGroupsController;
 			sourceTree = "<group>";
@@ -154,8 +179,8 @@
 		D8DE6D1224F8354F0094F233 /* MyFriendsController */ = {
 			isa = PBXGroup;
 			children = (
-				D8DE6D2524F838270094F233 /* MyFriendsTableViewController.swift */,
-				D8DE6D2724F8385A0094F233 /* MyFriendsTableViewCell.swift */,
+				D8DE6D2524F838270094F233 /* FriendsTableViewController.swift */,
+				D8DE6D2724F8385A0094F233 /* FriendsTableViewCell.swift */,
 			);
 			path = MyFriendsController;
 			sourceTree = "<group>";
@@ -163,9 +188,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D89D476B24F12E5100E37FEA /* Weather */ = {
+		D89D476B24F12E5100E37FEA /* VkappBG */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D89D478024F12E5300E37FEA /* Build configuration list for PBXNativeTarget "Weather" */;
+			buildConfigurationList = D89D478024F12E5300E37FEA /* Build configuration list for PBXNativeTarget "VkappBG" */;
 			buildPhases = (
 				D89D476824F12E5100E37FEA /* Sources */,
 				D89D476924F12E5100E37FEA /* Frameworks */,
@@ -175,9 +200,9 @@
 			);
 			dependencies = (
 			);
-			name = Weather;
+			name = VkappBG;
 			productName = Weather;
-			productReference = D89D476C24F12E5100E37FEA /* Weather.app */;
+			productReference = D89D476C24F12E5100E37FEA /* VkappBG.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -195,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D89D476724F12E5100E37FEA /* Build configuration list for PBXProject "Weather" */;
+			buildConfigurationList = D89D476724F12E5100E37FEA /* Build configuration list for PBXProject "VkappBG" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -208,7 +233,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D89D476B24F12E5100E37FEA /* Weather */,
+				D89D476B24F12E5100E37FEA /* VkappBG */,
 			);
 		};
 /* End PBXProject section */
@@ -218,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D862513C2506450800CE9EBD /* UserHeader.xib in Resources */,
 				D89D477C24F12E5300E37FEA /* LaunchScreen.storyboard in Resources */,
 				D89D477924F12E5300E37FEA /* Assets.xcassets in Resources */,
 				D89D477724F12E5100E37FEA /* Main.storyboard in Resources */,
@@ -231,24 +257,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D817405B25024F7700720075 /* Alert.swift in Sources */,
-				D8DE6D1424F8358F0094F233 /* User.swift in Sources */,
-				D89D477424F12E5100E37FEA /* LoginFormViewController.swift in Sources */,
+				D817405B25024F7700720075 /* UserHeader.swift in Sources */,
+				D8DE6D1424F8358F0094F233 /* UserData.swift in Sources */,
+				D86251412506459A00CE9EBD /* NewsTableViewCell.swift in Sources */,
+				D89D477424F12E5100E37FEA /* LoginFormController.swift in Sources */,
 				D8DE6D1E24F837020094F233 /* MyGroupsTableViewCell.swift in Sources */,
 				D89D477024F12E5100E37FEA /* AppDelegate.swift in Sources */,
-				D817405925024F4600720075 /* Gradient.swift in Sources */,
-				D817405725024F0A00720075 /* CustomButton.swift in Sources */,
+				D817405925024F4600720075 /* GradientView.swift in Sources */,
+				D817405725024F0A00720075 /* HeartButtonControl.swift in Sources */,
 				D8DE6D1C24F836C70094F233 /* MyGroupsTableViewController.swift in Sources */,
-				D8DE6D2624F838270094F233 /* MyFriendsTableViewController.swift in Sources */,
-				D8DE6D2424F837DF0094F233 /* FriendPhotosCollectionViewController.swift in Sources */,
+				D8DE6D2624F838270094F233 /* FriendsTableViewController.swift in Sources */,
+				D8DE6D2424F837DF0094F233 /* FriendsPhotoCollectionViewController.swift in Sources */,
+				D862513F2506457E00CE9EBD /* NewsTableViewController.swift in Sources */,
 				D8DE6D1624F835990094F233 /* Groups.swift in Sources */,
 				D89D477224F12E5100E37FEA /* SceneDelegate.swift in Sources */,
-				D817405325024EB000720075 /* AvatarView.swift in Sources */,
-				D8DE6D1824F8360A0094F233 /* AllGroupsTableViewController.swift in Sources */,
-				D8DE6D2824F8385A0094F233 /* MyFriendsTableViewCell.swift in Sources */,
-				D817405525024EDF00720075 /* BackView.swift in Sources */,
-				D8DE6D2224F8379C0094F233 /* FriendPhotosCollectionViewCell.swift in Sources */,
-				D8DE6D1A24F836460094F233 /* AllGroupsTableViewCell.swift in Sources */,
+				D817405325024EB000720075 /* AvatarShadow.swift in Sources */,
+				D8DE6D1824F8360A0094F233 /* SearchingGroupsTableViewController.swift in Sources */,
+				D8DE6D2824F8385A0094F233 /* FriendsTableViewCell.swift in Sources */,
+				D8DE6D2224F8379C0094F233 /* FriendsPhotoCollectionViewCell.swift in Sources */,
+				D8DE6D1A24F836460094F233 /* SearchingGroupsTableViewCell.swift in Sources */,
+				D86251432506465E00CE9EBD /* NewsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +455,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D89D476724F12E5100E37FEA /* Build configuration list for PBXProject "Weather" */ = {
+		D89D476724F12E5100E37FEA /* Build configuration list for PBXProject "VkappBG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D89D477E24F12E5300E37FEA /* Debug */,
@@ -436,7 +464,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D89D478024F12E5300E37FEA /* Build configuration list for PBXNativeTarget "Weather" */ = {
+		D89D478024F12E5300E37FEA /* Build configuration list for PBXNativeTarget "VkappBG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D89D478124F12E5300E37FEA /* Debug */,
