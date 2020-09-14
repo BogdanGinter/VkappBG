@@ -1,14 +1,14 @@
 //
-//  Groups.swift
+//  NewsData.swift
 //  Weather
 //
-//  Created by Богдан Гинтер on 27.08.2020.
+//  Created by Богдан Гинтер on 07.09.2020.
 //  Copyright © 2020 Bogdan Ginter. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-struct Group: Equatable {
-    var avatar: UIImage
-    var name: String
+struct GroupsData {
+    let name: String
+    let pic: String?
 }

@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  Groups.swift
 //  Weather
 //
 //  Created by Богдан Гинтер on 27.08.2020.
@@ -8,11 +8,7 @@
 
 import UIKit
 
-struct FriendList {
-    var name: String
+struct Group: Equatable {
     var avatar: UIImage
-    var photos: [UIImage] = []
-    var titleFirstLetter: String {
-        return String(name.first!)
-    }
+    var name: String
 }
