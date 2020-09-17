@@ -6,15 +6,15 @@
 //  Copyright © 2020 Bogdan Ginter. All rights reserved.
 //
 
-
 import UIKit
 
 class FriendsPhotoCollectionViewController: UICollectionViewController {
     
     var friendIndex: String = ""
     let photosView = ViewPhotos()
+    var currentLikes: Int?
     
-    var friendsPhotos: [String]? = nil
+    var friendsPhotos: [FriendImages]? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +28,21 @@ class FriendsPhotoCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "friendPhoto", for: indexPath) as! OneFriendCollectionViewCell
+        cell.imgStat = friendsPhotos![indexPath.row]
+        cell.configView()
+        cell.likesCountUp = {
+            self.friendsPhotos![indexPath.row].likesCount += 1
+        }
+        cell.likesCountDown = {
+            self.friendsPhotos![indexPath.row].likesCount -= 1
+        }
         
-        cell.configView(imgName: friendsPhotos![indexPath.row])
+        cell.likesStateUp = {
+            self.friendsPhotos![indexPath.row].likeState += 1
+        }
+        cell.likesStateDown = {
+            self.friendsPhotos![indexPath.row].likeState -= 1
+        }
         return cell
     }
     

@@ -12,7 +12,7 @@ class MainView: UIView {
     
     var oneFriendPhoto = UIImageView()
     let screenSize = UIScreen.main.bounds
-    var friendPhotos: [String?] = []
+    var friendPhotos: [FriendImages?] = []
     let leftBtn = UIButton()
     let rightBtn = UIButton()
     var currentImageIndex = Int()
@@ -103,7 +103,7 @@ class MainView: UIView {
             oneFriendPhoto.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -50)
             
         ])
-        oneFriendPhoto.image = UIImage(named: friendPhotos[currentImageIndex]!)
+        oneFriendPhoto.image = UIImage(named: (friendPhotos[currentImageIndex]?.name!)!)
         
     }
     
@@ -114,7 +114,7 @@ class MainView: UIView {
             self.oneFriendPhoto.alpha = 0.0
             self.oneFriendPhoto.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
         }, completion: { _ in
-            self.oneFriendPhoto.image = UIImage(named: self.friendPhotos[self.currentImageIndex]!)
+            self.oneFriendPhoto.image = UIImage(named: self.friendPhotos[self.currentImageIndex]?.name! ?? "")
             self.oneFriendPhoto.center = CGPoint(x: self.screenSize.midX, y: self.screenSize.midY)
             UIView.animate(withDuration: 0.2, animations: {
                 self.oneFriendPhoto.alpha = 1.0
@@ -132,7 +132,7 @@ class MainView: UIView {
             self.oneFriendPhoto.alpha = 0.0
             self.oneFriendPhoto.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
         }, completion: { _ in
-            self.oneFriendPhoto.image = UIImage(named: self.friendPhotos[self.currentImageIndex]!)
+            self.oneFriendPhoto.image = UIImage(named: self.friendPhotos[self.currentImageIndex]?.name ?? "")
             self.oneFriendPhoto.center = CGPoint(x: self.screenSize.midX, y: self.screenSize.midY)
             UIView.animate(withDuration: 0.2, animations: {
                 self.oneFriendPhoto.alpha = 1.0
