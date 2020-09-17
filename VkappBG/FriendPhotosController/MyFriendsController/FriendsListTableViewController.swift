@@ -19,7 +19,7 @@ class FriendsTableViewController: UITableViewController, UISearchBarDelegate, UI
     
     
    let myFriends = [
-         Friends(name: "Богдан", mainPic: "1", pics: ["tesla1a"], about: nil),
+         Friends(name: "Богдан", mainPic: "1", pics: ["1a"], about: nil),
         Friends(name: "Марк", mainPic: "2", pics: ["2a"], about: nil),
         Friends(name: "Дарья", mainPic: "3", pics: ["3a"], about: nil),
         Friends(name: "Алекс", mainPic: "4", pics: ["4a"], about: nil)
