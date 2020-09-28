@@ -30,19 +30,7 @@ class FriendsPhotoCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "friendPhoto", for: indexPath) as! OneFriendCollectionViewCell
         cell.imgStat = friendsPhotos![indexPath.row]
         cell.configView()
-        cell.likesCountUp = {
-            self.friendsPhotos![indexPath.row].likesCount += 1
-        }
-        cell.likesCountDown = {
-            self.friendsPhotos![indexPath.row].likesCount -= 1
-        }
-        
-        cell.likesStateUp = {
-            self.friendsPhotos![indexPath.row].likeState += 1
-        }
-        cell.likesStateDown = {
-            self.friendsPhotos![indexPath.row].likeState -= 1
-        }
+
         return cell
     }
     

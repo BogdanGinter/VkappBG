@@ -21,10 +21,6 @@ class NewsCell: UICollectionViewCell {
     let btnComment = UIButton(type: .custom)
     let btnSayOther = UIButton(type: .custom)
     let likeLabel: UILabel = UILabel()
-    var likesCountUp: () -> Void? = {}
-    var likesCountDown: () -> Void? = {}
-    var likesStateUp: () -> Void? = {}
-    var likesStateDown: () -> Void? = {}
     
     func configCell(currentFriend: Friends){
         postFriendName.text = currentFriend.name
@@ -113,15 +109,11 @@ class NewsCell: UICollectionViewCell {
         
         if likeTrigger == 0 {
             btn.setImage(UIImage(named: "heart-2"), for: .normal)
-            likesCountUp()
-            likesStateUp()
             likeLabel.text = "1"
             likeLabel.textColor = .systemGreen
         }else if likeTrigger == 1 {
             
             btn.setImage(UIImage(named: "heart"), for: .normal)
-            likesCountDown()
-            likesStateDown()
             likeLabel.text = "0"
             likeLabel.textColor = .red
             

@@ -7,95 +7,59 @@
 //
 
 import UIKit
+import WebKit
 
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var loginField: UITextField!
-    @IBOutlet weak var passField: UITextField!
-    @IBOutlet weak var processBarView: ProcessBar!
-    @IBOutlet weak var titleLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        loginField.text = "admin"
-        passField.text = "123456"
-        animateTitleAppearing()
-        animateProcessBar()
-    }
+    @IBOutlet weak var loginTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var processBarView: ProcessBar!
+
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-    }
-    
-    @objc
-    func keyboardWillShow(notification: Notification){
-        
-        guard
-            let keyboardHeight = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else {
-                return
+            super.viewWillAppear(animated)
+            
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         }
         
-        scrollView.contentInset.bottom = keyboardHeight.height
-    }
-    
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            
+            NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        }
         
-        if loginField.text == "admin" && passField.text == "123456"{
+        @objc
+        func keyboardWillShow(notification: Notification) {
             
-            return true
+            guard  let keyboardHeight = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
             
-        }else{
-            loginField.text = ""
-            passField.text = ""
+            scrollView.contentInset.bottom = keyboardHeight.height
+        }
+        
+        override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+            if loginTextField.text == "", passwordTextField.text == "" {
+                return true
+            }
             
-            let alert = UIAlertController(title: "Ошибка", message: "Проверьте логин или пароль", preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            let alert = UIAlertController(title: "Ошибка", message: "Неверный логин или пароль", preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "OK", style: .default)
+            
             alert.addAction(action)
-            present(alert, animated: true, completion: nil)
+            
+            present(alert, animated: true)
             
             return false
         }
-    }
-    
-    func animateTitleAppearing() {
-        self.titleLabel.transform = CGAffineTransform(translationX: 0,
-                                                      y: -self.view.bounds.height/2)
-        
-        UIView.animate(withDuration: 1,
-                       delay: 0,
-                       usingSpringWithDamping: 0.5,
-                       initialSpringVelocity: 0,
-                       options: .curveEaseOut,
-                       animations: {
-                        self.titleLabel.transform = .identity
-        },
-                       completion: nil)
-        
         
     }
-    
-    func animateProcessBar() {
+
+    extension LoginViewController: WKNavigationDelegate {
         
-        UIView.animate(withDuration: 1, delay: 0, options: [.autoreverse, .repeat], animations: {
-            self.processBarView.firstCircle.alpha = 0.0
-        })
         
-        UIView.animate(withDuration: 1, delay: 0.5, options: [.autoreverse, .repeat], animations: {
-            self.processBarView.secondCircle.alpha = 0.0
-        })
-        UIView.animate(withDuration: 1, delay: 1, options: [.autoreverse, .repeat], animations: {
-            self.processBarView.thirdCircle.alpha = 0.0
-        })
+      
         
     }
-    
-}

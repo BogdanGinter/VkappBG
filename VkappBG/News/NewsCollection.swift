@@ -31,19 +31,7 @@ class NewsCollection: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! NewsCell
         cell.configCell(currentFriend: myFriends[indexPath.row])
-        cell.likesCountUp = {
-            self.myFriends[indexPath.row].friendLikes += 1
-        }
-        cell.likesCountDown = {
-            self.myFriends[indexPath.row].friendLikes -= 1
-        }
-        
-        cell.likesStateUp = {
-            self.myFriends[indexPath.row].friendLikeState += 1
-        }
-        cell.likesStateDown = {
-            self.myFriends[indexPath.row].friendLikeState -= 1
-        }
+
    
         return cell
     }

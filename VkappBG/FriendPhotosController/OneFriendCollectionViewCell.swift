@@ -21,10 +21,6 @@ class OneFriendCollectionViewCell: UICollectionViewCell {
     
     var scaleLabel: CGAffineTransform
     var scaleCell: CGAffineTransform
-    var likesCountUp: () -> Void? = {}
-    var likesCountDown: () -> Void? = {}
-    var likesStateUp: () -> Void? = {}
-    var likesStateDown: () -> Void? = {}
     var imgStat: FriendImages?
     var likeTrigger: Int?
     
@@ -65,8 +61,6 @@ class OneFriendCollectionViewCell: UICollectionViewCell {
         
         if likeTrigger == 0 {
             btn.setImage(UIImage(named: "heart-2"), for: .normal)
-            likesCountUp()
-            likesStateUp()
             UIView.animate(withDuration: 1, animations: {
                 self.likeLabel.alpha = 0.0
             })
@@ -91,8 +85,6 @@ class OneFriendCollectionViewCell: UICollectionViewCell {
         }else if likeTrigger == 1 {
             
             btn.setImage(UIImage(named: "heart"), for: .normal)
-            likesCountDown()
-            likesStateDown()
             likeLabel.text = "0"
             likeLabel.textColor = .red
             

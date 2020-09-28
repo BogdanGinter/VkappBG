@@ -13,6 +13,9 @@
 		D862513F2506457E00CE9EBD /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862513E2506457E00CE9EBD /* NewsCell.swift */; };
 		D86251412506459A00CE9EBD /* NewsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86251402506459A00CE9EBD /* NewsCollection.swift */; };
 		D86251432506465E00CE9EBD /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86251422506465E00CE9EBD /* Groups.swift */; };
+		D8667B7C2521E6BC00370FD3 /* SecondLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8667B7B2521E6BC00370FD3 /* SecondLoginViewController.swift */; };
+		D8667B7F2521E71000370FD3 /* AnimatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8667B7E2521E71000370FD3 /* AnimatedViewController.swift */; };
+		D8667B832521E79900370FD3 /* VKSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8667B822521E79900370FD3 /* VKSession.swift */; };
 		D899C5512513D6BE00614EE1 /* NewsLayouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D899C5502513D6BE00614EE1 /* NewsLayouts.swift */; };
 		D89D477024F12E5100E37FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D476F24F12E5100E37FEA /* AppDelegate.swift */; };
 		D89D477224F12E5100E37FEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D477124F12E5100E37FEA /* SceneDelegate.swift */; };
@@ -43,6 +46,9 @@
 		D862513E2506457E00CE9EBD /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		D86251402506459A00CE9EBD /* NewsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollection.swift; sourceTree = "<group>"; };
 		D86251422506465E00CE9EBD /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
+		D8667B7B2521E6BC00370FD3 /* SecondLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLoginViewController.swift; sourceTree = "<group>"; };
+		D8667B7E2521E71000370FD3 /* AnimatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedViewController.swift; sourceTree = "<group>"; };
+		D8667B822521E79900370FD3 /* VKSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKSession.swift; sourceTree = "<group>"; };
 		D899C5502513D6BE00614EE1 /* NewsLayouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLayouts.swift; sourceTree = "<group>"; };
 		D89D476C24F12E5100E37FEA /* VkappBG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkappBG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89D476F24F12E5100E37FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 				D89D477124F12E5100E37FEA /* SceneDelegate.swift */,
 				D89D477524F12E5100E37FEA /* Main.storyboard */,
 				D89D477A24F12E5300E37FEA /* LaunchScreen.storyboard */,
+				D8667B7E2521E71000370FD3 /* AnimatedViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 				D8DE6D0E24F8348D0094F233 /* Models */,
 				D89D477324F12E5100E37FEA /* LoginViewController.swift */,
 				D8B35CC2250F47E70021E93A /* ProcessBar.swift */,
+				D8667B7B2521E6BC00370FD3 /* SecondLoginViewController.swift */,
 				D89D477824F12E5300E37FEA /* Assets.xcassets */,
 				D89D477D24F12E5300E37FEA /* Info.plist */,
 			);
@@ -168,6 +176,7 @@
 				D8B35CC4250F4A7F0021E93A /* Friends.swift */,
 				D8DE6D1324F8358F0094F233 /* User.swift */,
 				D8DE6D1524F835990094F233 /* Group.swift */,
+				D8667B822521E79900370FD3 /* VKSession.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,7 +246,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Bogdan Ginter";
 				TargetAttributes = {
 					D89D476B24F12E5100E37FEA = {
@@ -288,6 +297,7 @@
 				D89D477424F12E5100E37FEA /* LoginViewController.swift in Sources */,
 				D8DE6D1E24F837020094F233 /* UserGroupsTableCell.swift in Sources */,
 				D89D477024F12E5100E37FEA /* AppDelegate.swift in Sources */,
+				D8667B7C2521E6BC00370FD3 /* SecondLoginViewController.swift in Sources */,
 				D8B35CC3250F47E70021E93A /* ProcessBar.swift in Sources */,
 				D8B35CC5250F4A7F0021E93A /* Friends.swift in Sources */,
 				D8B35CBF250F474D0021E93A /* MainView.swift in Sources */,
@@ -296,6 +306,7 @@
 				D8DE6D2424F837DF0094F233 /* FriendsPhotoCollectionViewController.swift in Sources */,
 				D899C5512513D6BE00614EE1 /* NewsLayouts.swift in Sources */,
 				D862513F2506457E00CE9EBD /* NewsCell.swift in Sources */,
+				D8667B832521E79900370FD3 /* VKSession.swift in Sources */,
 				D8B35CC1250F47750021E93A /* ViewPhotos.swift in Sources */,
 				D8DE6D1624F835990094F233 /* Group.swift in Sources */,
 				D89D477224F12E5100E37FEA /* SceneDelegate.swift in Sources */,
@@ -303,6 +314,7 @@
 				D8DE6D1824F8360A0094F233 /* SearchGroupsTable.swift in Sources */,
 				D8DE6D2824F8385A0094F233 /* FriendsOneCellController.swift in Sources */,
 				D8DE6D2224F8379C0094F233 /* OneFriendCollectionViewCell.swift in Sources */,
+				D8667B7F2521E71000370FD3 /* AnimatedViewController.swift in Sources */,
 				D8DE6D1A24F836460094F233 /* SearchGroupTableCell.swift in Sources */,
 				D86251432506465E00CE9EBD /* Groups.swift in Sources */,
 			);
@@ -356,6 +368,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -416,6 +429,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
