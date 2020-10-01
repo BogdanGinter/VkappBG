@@ -1,0 +1,6 @@
+framework module Pods_VkappBG {
+  umbrella header "Pods-VkappBG-umbrella.h"
+
+  export *
+  module * { export * }
+}
