@@ -24,7 +24,7 @@ class VKRequests {
             URLQueryItem(name: "response_type", value: "token"),
             URLQueryItem(name: "v", value: "5.68")
         ]
-        let request = URLRequest(url: urlComponents.url!)
+        let request = URLRequest(url: urlComponents.url ?? <#default value#>)
         
         
         return request
