@@ -70,4 +70,4 @@ class VKRequests {
 }
     
 
-//3l
+//3les
