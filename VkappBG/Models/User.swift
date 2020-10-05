@@ -8,7 +8,6 @@
 
 
 import Foundation
-import Alamofire
 
 class Friend: Decodable {
    var firstNamne: String = ""
@@ -21,3 +20,4 @@ class Friend: Decodable {
 class FriendList: Decodable {
    var response: [Friend]
 }
+//3l
