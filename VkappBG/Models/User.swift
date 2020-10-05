@@ -6,13 +6,18 @@
 //  Copyright © 2020 Bogdan Ginter. All rights reserved.
 //
 
-import UIKit
 
-struct User {
-    let firstName: String
-    let lastName: String
-    let age: Int
-    let bornDate: String
-    let bornCity: String
-    let country: String
+import Foundation
+import Alamofire
+
+class Friend: Decodable {
+   var firstNamne: String = ""
+   var lastName: String = ""
+   var online: Int = 0
+   var photo100: String = ""
+   var id: Int = 0
+   var sex: Int = 0
+}
+class FriendList: Decodable {
+   var response: [Friend]
 }

@@ -19,8 +19,8 @@ class VKLoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.load(vkRequest.vkLoginRequest())
-       
-      
+        webView.navigationDelegate = self
+        
     }
     
 }
@@ -35,6 +35,8 @@ extension VKLoginController: WKNavigationDelegate {
             return
         }
         
+     
+        
         let params = fragment
             .components(separatedBy: "&")
             .map { $0.components(separatedBy: "=")}
@@ -48,16 +50,21 @@ extension VKLoginController: WKNavigationDelegate {
         guard let token = params["access_token"],
               let userId = Int(params["user_id"]!)
         else {
-            decisionHandler(.cancel)
+            decisionHandler(.allow)
             return
         }
         
         Session.shared.token = token
         Session.shared.userID = userId
-        print(Session.shared.token, "это токен")
+        debugPrint(Session.shared.token, "это токен")
         
+        
+        
+        performSegue(withIdentifier: "VKLogin", sender: nil)
+        decisionHandler(.cancel)
+        vkRequest.getFriends()
+        vkRequest.getGroup()
         
     }
     
 }
-//для пул реквеста
