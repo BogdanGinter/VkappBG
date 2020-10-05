@@ -3,13 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		56910B764E8201FF49FBEE83 /* Pods_VkappBG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B8FD1D5F0617EE64EB6007 /* Pods_VkappBG.framework */; };
 		D817405325024EB000720075 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817405225024EB000720075 /* AvatarView.swift */; };
 		D817405B25024F7700720075 /* FriendsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817405A25024F7700720075 /* FriendsHeaderCell.swift */; };
+		D84CAE0F2525CBF2008A9931 /* VKRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CAE0E2525CBF2008A9931 /* VKRequests.swift */; };
+		D84CAE132525CC6A008A9931 /* VKLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CAE122525CC6A008A9931 /* VKLoginController.swift */; };
+		D84F439E252B15F700AC33FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F439D252B15F700AC33FB /* ViewController.swift */; };
+		D84F43A1252B164200AC33FB /* FriendsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F43A0252B164200AC33FB /* FriendsListController.swift */; };
 		D862513C2506450800CE9EBD /* FriendsHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D862513B2506450800CE9EBD /* FriendsHeaderCell.xib */; };
 		D862513F2506457E00CE9EBD /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D862513E2506457E00CE9EBD /* NewsCell.swift */; };
 		D86251412506459A00CE9EBD /* NewsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86251402506459A00CE9EBD /* NewsCollection.swift */; };
@@ -38,8 +42,6 @@
 		D8DE6D2424F837DF0094F233 /* FriendsPhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D2324F837DF0094F233 /* FriendsPhotoCollectionViewController.swift */; };
 		D8DE6D2624F838270094F233 /* FriendsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D2524F838270094F233 /* FriendsListTableViewController.swift */; };
 		D8DE6D2824F8385A0094F233 /* FriendsOneCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE6D2724F8385A0094F233 /* FriendsOneCellController.swift */; };
-		D8E933612525B90D000DE112 /* VKLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E933602525B90D000DE112 /* VKLoginController.swift */; };
-		D8E933642525B958000DE112 /* VKRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E933632525B958000DE112 /* VKRequests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,10 @@
 		9DD96D11D84471462AF65A45 /* Pods-VkappBG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkappBG.release.xcconfig"; path = "Target Support Files/Pods-VkappBG/Pods-VkappBG.release.xcconfig"; sourceTree = "<group>"; };
 		D817405225024EB000720075 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		D817405A25024F7700720075 /* FriendsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsHeaderCell.swift; sourceTree = "<group>"; };
+		D84CAE0E2525CBF2008A9931 /* VKRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKRequests.swift; sourceTree = "<group>"; };
+		D84CAE122525CC6A008A9931 /* VKLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginController.swift; sourceTree = "<group>"; };
+		D84F439D252B15F700AC33FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D84F43A0252B164200AC33FB /* FriendsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListController.swift; sourceTree = "<group>"; };
 		D862513B2506450800CE9EBD /* FriendsHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsHeaderCell.xib; sourceTree = "<group>"; };
 		D862513E2506457E00CE9EBD /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		D86251402506459A00CE9EBD /* NewsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollection.swift; sourceTree = "<group>"; };
@@ -77,8 +83,6 @@
 		D8DE6D2324F837DF0094F233 /* FriendsPhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		D8DE6D2524F838270094F233 /* FriendsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListTableViewController.swift; sourceTree = "<group>"; };
 		D8DE6D2724F8385A0094F233 /* FriendsOneCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsOneCellController.swift; sourceTree = "<group>"; };
-		D8E933602525B90D000DE112 /* VKLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginController.swift; sourceTree = "<group>"; };
-		D8E933632525B958000DE112 /* VKRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKRequests.swift; sourceTree = "<group>"; };
 		EAE0950D35469E0B5F1498EF /* Pods-VkappBG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkappBG.debug.xcconfig"; path = "Target Support Files/Pods-VkappBG/Pods-VkappBG.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +112,6 @@
 				EAE0950D35469E0B5F1498EF /* Pods-VkappBG.debug.xcconfig */,
 				9DD96D11D84471462AF65A45 /* Pods-VkappBG.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +131,7 @@
 				D89D477524F12E5100E37FEA /* Main.storyboard */,
 				D89D477A24F12E5300E37FEA /* LaunchScreen.storyboard */,
 				D8667B7E2521E71000370FD3 /* AnimatedViewController.swift */,
+				D84F439D252B15F700AC33FB /* ViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -181,8 +185,9 @@
 				D8DE6D1024F835130094F233 /* FriendPhotosController */,
 				D8DE6D0E24F8348D0094F233 /* Models */,
 				D89D477324F12E5100E37FEA /* LoginViewController.swift */,
-				D8E933602525B90D000DE112 /* VKLoginController.swift */,
+				D84F43A0252B164200AC33FB /* FriendsListController.swift */,
 				D8B35CC2250F47E70021E93A /* ProcessBar.swift */,
+				D84CAE122525CC6A008A9931 /* VKLoginController.swift */,
 				D8667B7B2521E6BC00370FD3 /* SecondLoginViewController.swift */,
 				D89D477824F12E5300E37FEA /* Assets.xcassets */,
 				D89D477D24F12E5300E37FEA /* Info.plist */,
@@ -207,7 +212,7 @@
 				D8DE6D1324F8358F0094F233 /* User.swift */,
 				D8DE6D1524F835990094F233 /* Group.swift */,
 				D8667B822521E79900370FD3 /* VKSession.swift */,
-				D8E933632525B958000DE112 /* VKRequests.swift */,
+				D84CAE0E2525CBF2008A9931 /* VKRequests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -370,8 +375,8 @@
 				D8DE6D1424F8358F0094F233 /* User.swift in Sources */,
 				D86251412506459A00CE9EBD /* NewsCollection.swift in Sources */,
 				D89D477424F12E5100E37FEA /* LoginViewController.swift in Sources */,
-				D8E933612525B90D000DE112 /* VKLoginController.swift in Sources */,
 				D8DE6D1E24F837020094F233 /* UserGroupsTableCell.swift in Sources */,
+				D84F439E252B15F700AC33FB /* ViewController.swift in Sources */,
 				D89D477024F12E5100E37FEA /* AppDelegate.swift in Sources */,
 				D8667B7C2521E6BC00370FD3 /* SecondLoginViewController.swift in Sources */,
 				D8B35CC3250F47E70021E93A /* ProcessBar.swift in Sources */,
@@ -379,6 +384,7 @@
 				D8B35CBF250F474D0021E93A /* MainView.swift in Sources */,
 				D8DE6D1C24F836C70094F233 /* UserGroupsListTable.swift in Sources */,
 				D8DE6D2624F838270094F233 /* FriendsListTableViewController.swift in Sources */,
+				D84CAE132525CC6A008A9931 /* VKLoginController.swift in Sources */,
 				D8DE6D2424F837DF0094F233 /* FriendsPhotoCollectionViewController.swift in Sources */,
 				D899C5512513D6BE00614EE1 /* NewsLayouts.swift in Sources */,
 				D862513F2506457E00CE9EBD /* NewsCell.swift in Sources */,
@@ -386,7 +392,8 @@
 				D8B35CC1250F47750021E93A /* ViewPhotos.swift in Sources */,
 				D8DE6D1624F835990094F233 /* Group.swift in Sources */,
 				D89D477224F12E5100E37FEA /* SceneDelegate.swift in Sources */,
-				D8E933642525B958000DE112 /* VKRequests.swift in Sources */,
+				D84F43A1252B164200AC33FB /* FriendsListController.swift in Sources */,
+				D84CAE0F2525CBF2008A9931 /* VKRequests.swift in Sources */,
 				D817405325024EB000720075 /* AvatarView.swift in Sources */,
 				D8DE6D1824F8360A0094F233 /* SearchGroupsTable.swift in Sources */,
 				D8DE6D2824F8385A0094F233 /* FriendsOneCellController.swift in Sources */,
