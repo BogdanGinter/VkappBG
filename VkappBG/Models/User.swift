@@ -20,4 +20,4 @@ class Friend: Decodable {
 class FriendList: Decodable {
    var response: [Friend]
 }
-//3les
+
